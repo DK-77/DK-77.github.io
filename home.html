@@ -4,18 +4,97 @@
         <title>Homepage</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/home.css">
     </head>
     <body>
-        <div class="searchbar">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class="fa-search"></i></button>
+      <div id="main">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        
+            <button  class="openbtn" onclick="openNav()" type="button"><i class="fa fa-bars"></i></button>
+            <span style="visibility: hidden;">space</span>
+            <a class="navbar-brand" href="home.html">Home</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="Category.html">Category</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Wishlist.html">WishList</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Deals.html">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="seller_reg.html">Sell</a>
+              </li>
+            </ul>
+            <div class="col-sm-3 col-md-3 pull-right ml-auto">
+                <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </nav>
+        <span style="visibility: hidden;">
+          <br>
+          <br>
+        </span>
+
+        <div id="mySidebar" class="sidebar">
+          
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+          <a href="#">Account</a>
+          <a href="#">Orders</a>
+          <a href="#">Notifications</a>
+          <a href="#">Settings</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Sign Out</a>
         </div>
-        <div class="sidebar">
-            <a href="#Myaccount">My Account</a><br>
-            <a href="#Orders">Orders</a><br>
-            <a href="#Category">Category</a><br>
-            <a href="#Wishlist">Wish List</a><br>
-            <a href="#ContactUs">Contact Us</a><br>          
+        
+        
+    
+        
+        
+      <div id="con_1" class="container-fluid py-0">
+        <div class="row">
+        <div class="col-sm-4 no-gutters">
+          <div class="card" style="width:200px">
+            <img class="card-img-top" src="images/men_shoes.jpg" alt="Card image">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary stretched-link">Footwear</a>
+            </div>
+          </div>
         </div>
+        <div class="col-sm-4 no-gutters">
+          <div class="card" style="width:200px">
+            <img class="card-img-top" src="images/clothing.jpg" alt="Card image">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary stretched-link">Clothing</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 no-gutters">
+          <div class="card" style="width:200px">
+            <img class="card-img-top" src="images/handbags.jpg" alt="Card image">
+            <div class="card-body text-center">
+              <a href="#" class="btn btn-primary stretched-link">Handbags</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        </div>
+      </div>
+    
+        
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/popper.min.js"></script>
+        <script src="javascripts/bootstrap.min.js"></script>
+        <script src="javascripts/home.js"></script>
     </body>
 </html>
