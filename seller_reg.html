@@ -5,7 +5,9 @@
     <!-- Required meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/seller_reg.css">
     <!-- Title Page-->
     <title>Seller Registration</title>
 
@@ -13,47 +15,56 @@
 
 <body>
     <div>
-        <table>
-        <tr>    
-            <td>Firstname</td>
-            <td><input type="text" required></td>
-        <tr>
-        <tr>    
-            <td>Lastname</td>
-            <td><input type="text" required></td>
-        <tr>
-        <tr>    
-            <td>Username</td>
-            <td><input type="text" required></td>
-        <tr>
-        <tr>    
-            <td>Password</td>
-            <td><input type="password" required></td>
-        <tr>
-        <tr>    
-            <td>E-mail</td>
-            <td><input type="email" required></td>
-        <tr>
-        <tr>    
-            <td>Phone Number</td>
-            <td><input type="number"></td>
-        <tr>
-        <tr>    
-            <td>Bank Account No.</td>
-            <td><input type="number"></td>
-        <tr>
-        <tr>    
-            <td>IFSC Code</td>
-            <td><input type="text"></td>
-        <tr>
-        <tr>    
-            <td>Bank Name</td>
-            <td><input type="text"></td>
-        <tr>
-        
-        </table>
-    </div>
+        <!--navbar-->
+        <nav class="nav nav-pills justify-content-center">
+            
+            <a class="nav-link active" href="#"><span class="badge badge-light"><i class="fa fa-check" aria-hidden="true"></i></span>Verification</a>
+            <a class="nav-link" href="#"><span class="badge badge-light"><i class="fa fa-check" aria-hidden="true"></i></span>Seller Information</a>
+            <a class="nav-link" href="#"><span class="badge badge-light"><i class="fa fa-check" aria-hidden="true"></i></span>Tax Details</a>
+            <a class="nav-link" href="#"><span class="badge badge-light"><i class="fa fa-check" aria-hidden="true"></i></span>Dashboard</a>
+        </nav>
+        <!--navbar-->
 
+        <div class="page-content">
+            <div class="form-v5-content">
+                <form class="form-detail" action="#" method="post">
+                    <h2>Register Account Form</h2>
+                    <div class="form-row">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="full-name" id="full-name" class="input-text" placeholder="Your Name" required>
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="your-email">Your Email</label>
+                        <input type="text" name="your-email" id="your-email" class="input-text" placeholder="Your Email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="full-name">Your Number</label>
+                        <input type="text" name="number" id="number" class="input-text" placeholder="Your Number" required>
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" class="input-text" placeholder="Your Password" required>
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    
+                    <div class="form-row-last">
+                        <input type="submit" name="register" class="register" value="Register">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/popper.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/home.js"></script>
    
 
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
