@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link id="bootstrap-css" rel="stylesheet" href="stlyesheets/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/cart.css">
+    </head>
+    <body>
+        <div class="container">
+            <table id="cart" class="table table-hover table-condensed">
+                            <thead>
+                                <tr>
+                                    <th style="width:50%">Product</th>
+                                    <th style="width:10%">Price</th>
+                                    <th style="width:8%">Quantity</th>
+                                    <th style="width:22%" class="text-center">Subtotal</th>
+                                    <th style="width:10%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="item">
+                                    <td data-th="Product">
+                                        <div class="row">
+                                            <div class="col-sm-2 hidden-xs"><img src="images/sparkx.jpg" alt="..." class="img-responsive"/></div>
+                                            <div class="col-sm-10">
+                                                <h4 class="nomargin">Product 1</h4>
+                                                <p>Navy Blues from Sparkx Men's Collection </p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td id="price" data-th="Price">875.00</td>
+                                    <td data-th="Quantity">
+                                        <input id="in1" type="number" class="form-control text-center" value="1">
+                                    </td>
+                                    <td id="Subtotal" data-th="Subtotal" class="text-center">875.00</td>
+                                    <td class="actions" data-th="">
+                                        <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>								
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                               
+                                <tr>
+                                    <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                                    <td colspan="2" class="hidden-xs"></td>
+                                    <td id="Total" class="hidden-xs text-center"><strong>Total ₹ 875.00</strong></td>
+                                    <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+        </div>
+        <script src="javascripts/bootstrap.min.js"></script>
+        <script src="javascripts/jquery-3.5.1.slim.min.js"></script>
+        <script src="javascripts/jquery.min.js"></script>
+        <script src="javascripts/popper.min.js"></script>
+        <script src="jqueries/cart.js"></script>
+    </body>
+</html>
