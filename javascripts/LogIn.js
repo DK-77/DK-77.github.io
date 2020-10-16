@@ -1,12 +1,12 @@
 function verify()
 {
 
-    var usrname = document.getElementById("username").value;
+    var usrname = document.getElementById("full-name").value;
     var pwd = document.getElementById("password").value;
 
     if(usrname==="admin" && pwd==="admin")
     {
-        window.location.href="https://dk-77.github.io/home.html";
+        window.location.href="home.html";
     }
     else
     {
